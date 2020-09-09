@@ -47,5 +47,5 @@ def combinate(name: str) -> List[str]:
 def combinate_cmd(args: List[str]):
     if len(args) != 1:
         # TODO: let you set in-prog vet file/output file/resume or restart vet?
-        raise Exception('`vet` requires exactly one arg (path to file to dedupe)')
+        raise Exception('`combinate` requires exactly one arg (path to file to dedupe)')
     combinate_file(args[0])
