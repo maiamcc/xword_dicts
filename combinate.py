@@ -2,7 +2,7 @@ from typing import List
 
 import utils
 
-CUTSET = ['.', '-', '"', '\'', ',', '/']
+CUTSET = ['.', '-', '"', '\'', ',', '/', ' ']
 WORDS = utils.get_crossfire_default_dict()
 
 
