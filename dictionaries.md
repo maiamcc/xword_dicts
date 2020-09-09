@@ -18,3 +18,11 @@ for (i = 0; i < results.length; i++) {
     console.log(results[i]); 
 }
 ```
+
+### Future work
+* scrape Urban Dictionary
+* scrape any number of wiki categories and then rank popularity
+* The Simpsons locations
+* top N lists
+* NYT_first_said bot
+* some slang dictionary

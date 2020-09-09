@@ -2,7 +2,19 @@ from typing import List
 
 import utils
 
-def fname_combinated(file: str) -> str: return '{}.combinated'.format(file)
+CUTSET = ['.', '-', '"', '\'', ',', '/',]
+ILLEGAL = ['the', 'of', 'von', 'van']
+
+
+def fname_combinated(file: str) -> str:
+    return '{}.combinated'.format(file)
+
+
+def clean(s: str) -> str:
+    for ch in CUTSET:
+        s = s.replace(ch, '')
+    return s
+
 
 def combinate_file(file: str):
     """
@@ -29,7 +41,7 @@ def combinate(name: str) -> List[str]:
     if len(chunks) > 2:
         for i in range(len(chunks)-1):
             res.append('{} {}'.format(chunks[i], chunks[i+1]))
-    return res
+    return [comb for comb in res if comb.lower not in ILLEGAL and len(clean(comb)) >= 3]
 
 
 def combinate_cmd(args: List[str]):

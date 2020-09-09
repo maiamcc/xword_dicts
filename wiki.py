@@ -41,7 +41,7 @@ def views_per_month(name: str) -> int:
 
 
 if __name__ == '__main__':
-    names = utils.file_to_list('simpsons.raw')
+    names = utils.file_to_list('simpsons.raw.deduped')
     scores = {}
     couldnt_find = []
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
         try:
             scores[name] = views_per_month(name)
         except Exception as e:
-            print(e)
+            # print(e)
             couldnt_find.append(name)
         finally:
             utils.print_progress_bar(i+1, len(names))
@@ -61,7 +61,9 @@ if __name__ == '__main__':
     print('------')
     print()
 
-    sort_by_views = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+    sort_by_views = ['{}\t{}'.format(k,v) for k, v in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
+
+    utils.list_to_file('simpsons.sorted', sort_by_views, do_dedupe=False)
 
     for i in sort_by_views:
-        print(i[0], i[1])
+        print(i)
