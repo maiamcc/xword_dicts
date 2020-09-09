@@ -8,6 +8,7 @@ from typing import List
 def file_vetted(file: str) -> str: return '{}.vetted'.format(file)
 def file_in_prog_vet(file: str) -> str: return '{}.in_prog_vet'.format(file)
 def file_deduped(file: str) -> str: return '{}.deduped'.format(file)
+def file_combinated(file: str) -> str: return '{}.combinated'.format(file)
 
 
 def file_to_list(file: str) -> List[str]:
@@ -37,17 +38,17 @@ def dedupe(li: List[str]) -> List[str]:
     return list(set(li))
 
 
-def vet_file(file: str):
+def vet_file(basefile: str):
     """
-    Read in the file $FILE as newline-separated list,
+    Read in the file $BASEFILE as newline-separated list,
     offers elements to user one by one to vet via cmd line.
-    Approved elements are stored in $FILE.vetted.
+    Approved elements are stored in $BASEFILE.vetted.
 
-    Elements-to-vet stored in $FILE.in_prog_vet. If this file
+    Elements-to-vet stored in $BASEFILE.in_prog_vet. If this file
     exists when `vet` is called, user has the option of continuing
     the in-progress vet or starting a new one.
     """
-    in_prog_file = file_in_prog_vet(file)
+    in_prog_file = file_in_prog_vet(basefile)
     accepted = []
     use_existing_vet = False
     if os.path.isfile(in_prog_file):
@@ -55,11 +56,11 @@ def vet_file(file: str):
         answer = ask_user_yn()
         if answer:
             elems = dedupe(file_to_list(in_prog_file))
-            accepted = dedupe(file_to_list(file_vetted(file)))
+            accepted = dedupe(file_to_list(file_vetted(basefile)))
             use_existing_vet = True
     # if no in-prog file but there exist a .vetted file?
     if not use_existing_vet:
-        elems = dedupe(file_to_list(file))
+        elems = dedupe(file_to_list(basefile))
         # delete in-prog vet file?
 
     print('Elems to vet: {}'.format(len(elems)))
@@ -75,13 +76,41 @@ def vet_file(file: str):
         finished = True
     finally:
         if len(accepted) > 0:
-            list_to_file(file_vetted(file), accepted)
+            list_to_file(file_vetted(basefile), accepted)
         if finished:
             print('Accepted {} candidates'.format(len(accepted)))
             # delete in-prog file
         else:
             list_to_file(in_prog_file, elems[i:])
             print('Accepted {} candidates ({} remaining)'.format(len(accepted), len(elems)-i))
+
+
+def combinate_file(file: str):
+    """
+    Read in the file of names $FILE as newline-separated list, and for every name,
+    generate crossword candidates: [first last, first, last], etc.
+
+    Stores results in $FILE.combinated.
+    """
+    names = file_to_list(file)
+    results = []
+    for name in names:
+        results.extend(combinate(name))
+
+    print('{} names resulted in {} combinations'.format(len(names), len(results)))
+    list_to_file(file_combinated(file), dedupe(results))
+
+
+def combinate(name: str) -> List[str]:
+    res = [name]
+    chunks = name.split(" ")
+    if len(chunks) == 1:
+        return res
+    res.extend([chunks[0], chunks[-1]])
+    if len(chunks) > 2:
+        for i in range(len(chunks)-1):
+            res.append('{} {}'.format(chunks[i], chunks[i+1]))
+    return res
 
 
 def ask_user_yn(default=True):
@@ -107,7 +136,15 @@ def vet_cmd(args: List[str]):
     vet_file(args[0])
 
 
-CMDS_TO_FUNCS = {'dedupe': dedupe_cmd, 'vet': vet_cmd}
+def combinate_cmd(args: List[str]):
+    if len(args) != 1:
+        # TODO: let you set in-prog vet file/output file/resume or restart vet?
+        raise Exception('`vet` requires exactly one arg (path to file to dedupe)')
+    combinate_file(args[0])
+
+
+CMDS_TO_FUNCS = {'dedupe': dedupe_cmd, 'vet': vet_cmd,
+                 'combinate': combinate_cmd}
 
 
 def main():
