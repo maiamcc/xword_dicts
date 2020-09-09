@@ -28,14 +28,22 @@ def dedupe_from_file(file: str):
     dedupe list and write to $FILE.deduped"""
     elems = file_to_list(file)
     print('Elems before dedupe: {}'.format(len(elems)))
-    deduped = dedupe(elems)
+    deduped = dedupe_in_place(elems)
     print('Elems after dedupe: {}'.format(len(deduped)))
 
     list_to_file(file_deduped(file), elems)
 
 
-def dedupe(li: List[str]) -> List[str]:
-    return list(set(li))
+def dedupe_in_place(li: List[str]) -> List[str]:
+    # Not the MOST efficient so we can retain order as much as possible
+    seen = set()
+    unique = []
+    for item in li:
+        if item in seen:
+            continue
+        seen.add(item)
+        unique.append(item)
+    return unique
 
 
 def vet_file(basefile: str):
@@ -55,12 +63,12 @@ def vet_file(basefile: str):
         print('Vet in progress, continue existing? [Y/n]')
         answer = ask_user_yn()
         if answer:
-            elems = dedupe(file_to_list(in_prog_file))
-            accepted = dedupe(file_to_list(file_vetted(basefile)))
+            elems = dedupe_in_place(file_to_list(in_prog_file))
+            accepted = dedupe_in_place(file_to_list(file_vetted(basefile)))
             use_existing_vet = True
     # if no in-prog file but there exist a .vetted file?
     if not use_existing_vet:
-        elems = dedupe(file_to_list(basefile))
+        elems = dedupe_in_place(file_to_list(basefile))
         # delete in-prog vet file?
 
     print('Elems to vet: {}'.format(len(elems)))
@@ -98,7 +106,7 @@ def combinate_file(file: str):
         results.extend(combinate(name))
 
     print('{} names resulted in {} combinations'.format(len(names), len(results)))
-    list_to_file(file_combinated(file), dedupe(results))
+    list_to_file(file_combinated(file), dedupe_in_place(results))
 
 
 def combinate(name: str) -> List[str]:
