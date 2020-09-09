@@ -2,8 +2,8 @@ from typing import List
 
 import utils
 
-CUTSET = ['.', '-', '"', '\'', ',', '/',]
-ILLEGAL = ['the', 'of', 'von', 'van']
+CUTSET = ['.', '-', '"', '\'', ',', '/']
+WORDS = utils.get_crossfire_default_dict()
 
 
 def fname_combinated(file: str) -> str:
@@ -37,11 +37,13 @@ def combinate(name: str) -> List[str]:
     chunks = name.split(" ")
     if len(chunks) == 1:
         return res
-    res.extend([chunks[0], chunks[-1]])
+    res.extend(chunks)
     if len(chunks) > 2:
         for i in range(len(chunks)-1):
             res.append('{} {}'.format(chunks[i], chunks[i+1]))
-    return [comb for comb in res if comb.lower not in ILLEGAL and len(clean(comb)) >= 3]
+
+    # A combination is valid if it's >= 3 chars and not a common word
+    return [comb for comb in res if clean(comb).lower() not in WORDS and len(clean(comb)) >= 3]
 
 
 def combinate_cmd(args: List[str]):

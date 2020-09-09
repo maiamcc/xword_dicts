@@ -1,11 +1,13 @@
 from typing import List
 
+CROSSFILE_DEFAULT_DICT_PATH = '/Library/CrossFire/default.dict'
+
 
 def file_to_list(file: str, do_dedupe=True) -> List[str]:
     with open(file) as infile:
         contents = infile.read()
     li = contents.strip().split('\n')
-    elems = [elem.strip() for elem in li if elem.strip() != '']
+    elems = [elem.strip() for elem in li if elem.strip() != '' and not elem.startswith('#')]
     if do_dedupe:
         elems = dedupe(elems)
     return elems
@@ -61,3 +63,8 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
     # Print New Line on Complete
     if iteration == total:
         print()
+
+
+def get_crossfire_default_dict() -> set:
+    entries = file_to_list(CROSSFILE_DEFAULT_DICT_PATH)
+    return set(entry.split(';')[0].lower() for entry in entries)
