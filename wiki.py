@@ -1,8 +1,9 @@
 #! /usr/bin/env python
 from datetime import date
-import sys
 
 import requests
+
+import utils
 
 ITEMS = 'items'
 VIEWS = 'views'
@@ -33,10 +34,34 @@ def views_per_month(name: str) -> int:
         num_months += 1
         total_views += int(item[VIEWS])
 
-    print('total views: {}'.format(total_views))
-    print('views per month: {}'.format(total_views/num_months))
+    # print('total views: {}'.format(total_views))
+    # print('views per month: {}'.format(total_views/num_months))
 
     return total_views/num_months
 
+
 if __name__ == '__main__':
-    views_per_month(sys.argv[1])
+    names = utils.file_to_list('simpsons.raw')
+    scores = {}
+    couldnt_find = []
+
+    utils.print_progress_bar(0, len(names))
+    for i, name in enumerate(names):
+        try:
+            scores[name] = views_per_month(name)
+        except Exception as e:
+            print(e)
+            couldnt_find.append(name)
+        finally:
+            utils.print_progress_bar(i+1, len(names))
+
+    print()
+    print('---FAILED TO FIND---')
+    print(couldnt_find)
+    print('------')
+    print()
+
+    sort_by_views = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+
+    for i in sort_by_views:
+        print(i[0], i[1])
