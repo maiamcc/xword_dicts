@@ -39,7 +39,7 @@ Useful for combing through a list of spotty data and deciding what to keep.
 
 ## Dictionaries
  
-### Celebs ([`celebs.dict`](/celebs.dict))
+### Celebs ([`celebs.dict`](/dictionaries/celebs.dict))
 
 Sourced from:
 * [The Simpsons cast](https://en.wikipedia.org/wiki/List_of_The_Simpsons_cast_members), and Simpsons Guest Stars [pt. 1](https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars_(seasons_1%E2%80%9320) and [pt. 2](https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars), because it's a Who's Who of actors and other celebrities
