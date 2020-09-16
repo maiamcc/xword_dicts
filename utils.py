@@ -25,9 +25,10 @@ def dedupe(li: List[str]) -> List[str]:
     seen = set()
     unique = []
     for item in li:
-        if item in seen:
+        cleaned = clean(item)
+        if cleaned in seen:
             continue
-        seen.add(item)
+        seen.add(cleaned)
         unique.append(item)
     return unique
 
@@ -69,7 +70,7 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
 
 def clean(s: str) -> str:
     for ch in ['.', '-', '"', '\'', ',', '/', ' ']:
-        s = s.replace(ch, '')
+        s = s.replace(ch, '').lower()
     return s
 
 
