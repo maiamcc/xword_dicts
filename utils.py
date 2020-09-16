@@ -59,12 +59,21 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
     percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
     filled_length = int(length * iteration // total)
     bar = fill * filled_length + '-' * (length - filled_length)
-    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end=print_end)
+    print('\r{prefix} |{bar}| {percent}% {suffix}'.
+        format(prefix=prefix, bar=bar, percent=percent, suffix=suffix),
+        end=print_end)
     # Print New Line on Complete
     if iteration == total:
         print()
 
 
+def clean(s: str) -> str:
+    for ch in ['.', '-', '"', '\'', ',', '/', ' ']:
+        s = s.replace(ch, '')
+    return s
+
+
 def get_crossfire_default_dict() -> set:
     entries = file_to_list(CROSSFILE_DEFAULT_DICT_PATH)
-    return set(entry.split(';')[0].lower() for entry in entries)
+    # TODO: make sure tiny common words like "THE" end up in here
+    return set(clean(entry.split(';')[0].lower()) for entry in entries)

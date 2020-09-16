@@ -2,18 +2,11 @@ from typing import List
 
 import utils
 
-CUTSET = ['.', '-', '"', '\'', ',', '/', ' ']
 WORDS = utils.get_crossfire_default_dict()
 
 
 def fname_combinated(file: str) -> str:
     return '{}.combinated'.format(file)
-
-
-def clean(s: str) -> str:
-    for ch in CUTSET:
-        s = s.replace(ch, '')
-    return s
 
 
 def combinate_file(file: str):
@@ -43,7 +36,7 @@ def combinate(name: str) -> List[str]:
             res.append('{} {}'.format(chunks[i], chunks[i+1]))
 
     # A combination is valid if it's >= 3 chars and not a common word
-    return [comb for comb in res if clean(comb).lower() not in WORDS and len(clean(comb)) >= 3]
+    return [comb for comb in res if utils.clean(comb).lower() not in WORDS and len(utils.clean(comb)) >= 3]
 
 
 def combinate_cmd(args: List[str]):
