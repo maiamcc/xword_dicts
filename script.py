@@ -3,6 +3,7 @@ import sys
 
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
+from score import score_cmd
 from vet import vet_cmd
 from wiki import wikisort_cmd
 
@@ -10,9 +11,10 @@ from wiki import wikisort_cmd
 CMDS_TO_FUNCS = {
     'dedupe': dedupe_cmd,
     'combinate': combinate_cmd,
-    'wikisort': wikisort_cmd,
+    'score': score_cmd,
     'vet': vet_cmd,
-                 }
+    'wikisort': wikisort_cmd,
+}
 
 AVAILABLE_CMDS = ", ".join(CMDS_TO_FUNCS.keys())
 
