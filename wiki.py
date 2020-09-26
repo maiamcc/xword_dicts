@@ -45,7 +45,7 @@ def rank_cmd(args: List[str]):
 
 
 def rank_file(file: str):
-    names = utils.file_to_list(file)
+    _, names = utils.file_to_list(file)
     scores = {}
     couldnt_find = []
 

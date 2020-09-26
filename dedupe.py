@@ -11,12 +11,12 @@ def dedupe_from_file(file: str):
     Read in the file $FILE as newline-separated list,
     dedupe list and write to $FILE.deduped
     """
-    elems = utils.file_to_list(file, do_dedupe=False)
+    frontmatter, elems = utils.file_to_list(file, do_dedupe=False)
     print('Elems before dedupe: {}'.format(len(elems)))
     deduped = utils.dedupe(elems, verbose=True)
     print('Elems after dedupe: {}'.format(len(deduped)))
 
-    utils.list_to_file(fname_deduped(file), elems)
+    utils.list_to_file(fname_deduped(file), frontmatter + elems)
 
 
 def dedupe_cmd(args: List[str]):

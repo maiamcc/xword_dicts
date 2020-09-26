@@ -95,8 +95,5 @@ Sourced from:
 * Comic book characters/superheros
 * Games (video games, board games)
 
-#### Future work (technical)
-* Preserve comments when manipulating lists
-
 #### See also:
 * https://github.com/stephthegeek/Crossword-Dictionaries

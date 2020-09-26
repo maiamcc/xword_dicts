@@ -24,14 +24,14 @@ def vet_file(basefile: str):
         print('Vet in progress, continue existing? [Y/n]')
         answer = utils.ask_user_yn()
         if answer:
-            elems = utils.file_to_list(in_prog_file)
-            accepted = utils.file_to_list(fname_vetted(basefile))
+            frontmatter, elems = utils.file_to_list(in_prog_file)
+            _, accepted = utils.file_to_list(fname_vetted(basefile))
             use_existing_vet = True
         else:
             os.remove(in_prog_file)
     # if no in-prog file but there exist a .vetted file?
     if not use_existing_vet:
-        elems = utils.file_to_list(basefile)
+        frontmatter, elems = utils.file_to_list(basefile)
 
     print('Elems to vet: {}'.format(len(elems)))
     finished = False
@@ -46,13 +46,13 @@ def vet_file(basefile: str):
         finished = True
     finally:
         if len(accepted) > 0:
-            utils.list_to_file(fname_vetted(basefile), accepted)
+            utils.list_to_file(fname_vetted(basefile), frontmatter + accepted)
         if finished:
             print('Accepted {} candidates'.format(len(accepted)))
             if os.path.isfile(in_prog_file):
                 os.remove(in_prog_file)
         else:
-            utils.list_to_file(in_prog_file, elems[i:])
+            utils.list_to_file(in_prog_file, frontmatter + elems[i:])
             print('Accepted {} candidates ({} remaining)'.format(len(accepted), len(elems)-i))
 
 

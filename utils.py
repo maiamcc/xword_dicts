@@ -3,14 +3,16 @@ from typing import List
 CROSSFILE_DEFAULT_DICT_PATH = '/Library/CrossFire/default.dict'
 
 
-def file_to_list(file: str, do_dedupe=True) -> List[str]:
+def file_to_list(file: str, do_dedupe=True) -> (List[str], List[str]):
+    """Returns frontmatter (list of comment lines) and list of elements."""
     with open(file) as infile:
         contents = infile.read()
     li = contents.strip().split('\n')
+    frontmatter = get_frontmatter(li)
     elems = [elem.strip() for elem in li if elem.strip() != '' and not elem.startswith('#')]
     if do_dedupe:
         elems = dedupe(elems)
-    return elems
+    return frontmatter, elems
 
 
 def list_to_file(file: str, li: List, do_dedupe=True):
@@ -18,6 +20,19 @@ def list_to_file(file: str, li: List, do_dedupe=True):
         li = dedupe(li)
     with open(file, 'w') as outfile:
         outfile.write('\n'.join(li))
+
+
+def get_frontmatter(lines: List[str]) -> List[str]:
+    """Given a list of lines from a file, return any comment lines at the beginning."""
+    frontmatter = []
+    for ln in lines:
+        if ln.startswith('#'):
+            frontmatter.append(ln)
+        elif ln.strip() != '':
+            # we're reached a non-comment, non-whitespace line; done collecting frontmatter
+            break
+
+    return frontmatter
 
 
 def dedupe(li: List[str], verbose: bool=False) -> List[str]:
@@ -77,6 +92,13 @@ def clean(s: str) -> str:
 
 
 def get_crossfire_default_dict() -> set:
-    entries = file_to_list(CROSSFILE_DEFAULT_DICT_PATH)
+    _, entries = file_to_list(CROSSFILE_DEFAULT_DICT_PATH)
     # TODO: make sure tiny common words like "THE" end up in here
     return set(clean(entry.split(';')[0].lower()) for entry in entries)
+
+
+# d = utils.get_crossfire_default_dict()
+# >>> from nltk.corpus import reuters
+# >>> for wd in rwords:
+#     ...     if wd.isalpha() and wd not in d:
+#     ...         notin.add(wd)

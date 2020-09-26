@@ -16,13 +16,13 @@ def combinate_file(file: str):
 
     Stores results in $FILE.combinated.
     """
-    names = utils.file_to_list(file)
+    frontmatter, names = utils.file_to_list(file)
     results = []
     for name in names:
         results.extend(combinate(name))
 
     print('{} names resulted in {} combinations'.format(len(names), len(results)))
-    utils.list_to_file(fname_combinated(file), results)
+    utils.list_to_file(fname_combinated(file), frontmatter + results)
 
 
 def combinate(name: str) -> List[str]:
