@@ -65,14 +65,28 @@ for (i = 0; i < results.length; i++) {
 ```
 Otherwise, just copy/paste.
 
+### Websites & Apps ([`websites.dict`](/dictionaries/websites.dict))
+
+Popular websites and apps. (Because of the nature of the source material, contains lots of news media, too.)
+Sourced from:
+* [Moz.com's "Top 500 Websites"](https://moz.com/top500)
+* [Wikipedia: Most Popular Smartphone Apps](https://en.wikipedia.org/wiki/List_of_most_popular_smartphone_apps)
+* [Wikipedia: Most Downloaded iOS Apps](https://en.wikipedia.org/wiki/App_Store_(iOS)#Most_downloaded_apps)
+* [Wikipedia: Most Downloaded Android Apps](https://en.wikipedia.org/wiki/List_of_most-downloaded_Google_Play_applications)
+
 ### Future work
 * scrape Urban Dictionary
 * scrape any number of wiki categories and then rank popularity
 * The Simpsons locations
 * top N lists
 * NYT_first_said bot
-* some slang dictionary
+* some slang dictionary / internet acronym list
 * Simpsons characters and places (see [characters](https://en.wikipedia.org/wiki/List_of_The_Simpsons_characters) and [recurring characters](https://en.wikipedia.org/wiki/List_of_recurring_The_Simpsons_characters#TOP), [Springfield](https://en.wikipedia.org/wiki/Springfield_(The_Simpsons))
+* Comic book characters/superheros
+* Games (video games, board games)
+
+#### Future work (technical)
+* Preserve comments when manipulating lists
 
 #### See also:
 * https://github.com/stephthegeek/Crossword-Dictionaries
