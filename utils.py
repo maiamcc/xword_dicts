@@ -20,13 +20,15 @@ def list_to_file(file: str, li: List, do_dedupe=True):
         outfile.write('\n'.join(li))
 
 
-def dedupe(li: List[str]) -> List[str]:
+def dedupe(li: List[str], verbose: bool=False) -> List[str]:
     # Not the MOST efficient so we can retain order as much as possible
     seen = set()
     unique = []
     for item in li:
         cleaned = clean(item)
         if cleaned in seen:
+            if verbose:
+                print('~ X:', item)
             continue
         seen.add(cleaned)
         unique.append(item)
@@ -69,7 +71,7 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
 
 
 def clean(s: str) -> str:
-    for ch in ['.', '-', '"', '\'', ',', '/', ' ']:
+    for ch in ['.', '-', '"', '\'', ',', '/', ' ', '\'']:
         s = s.replace(ch, '').lower()
     return s
 

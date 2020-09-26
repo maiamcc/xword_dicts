@@ -13,7 +13,7 @@ def dedupe_from_file(file: str):
     """
     elems = utils.file_to_list(file, do_dedupe=False)
     print('Elems before dedupe: {}'.format(len(elems)))
-    deduped = utils.dedupe(elems)
+    deduped = utils.dedupe(elems, verbose=True)
     print('Elems after dedupe: {}'.format(len(deduped)))
 
     utils.list_to_file(fname_deduped(file), elems)
