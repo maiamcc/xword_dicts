@@ -68,11 +68,21 @@ Otherwise, just copy/paste.
 ### Websites & Apps ([`websites.dict`](/dictionaries/websites.dict))
 
 Popular websites and apps. (Because of the nature of the source material, contains lots of news media, too.)
+
 Sourced from:
 * [Moz.com's "Top 500 Websites"](https://moz.com/top500)
 * [Wikipedia: Most Popular Smartphone Apps](https://en.wikipedia.org/wiki/List_of_most_popular_smartphone_apps)
 * [Wikipedia: Most Downloaded iOS Apps](https://en.wikipedia.org/wiki/App_Store_(iOS)#Most_downloaded_apps)
 * [Wikipedia: Most Downloaded Android Apps](https://en.wikipedia.org/wiki/List_of_most-downloaded_Google_Play_applications)
+
+### UrbanDictionary Miscellany ([`urbandictionary.dict`](/dictionaries/urbandictionary.dict))
+
+Honestly I just looked at the top [UrbanDictionary](https://www.urbandictionary.com/) words by letter and the current most popular words and grabbed whatever looked interesting and wasn't already in CrossFire's dictionary (plus some word associating).
+
+### Colleges and Universities ([`colleges.dict`](/dictionaries/colleges.dict))
+Sourced from:
+* [US News Top Liberal Arts Colleges](https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges)
+* [The Ivy League](https://en.wikipedia.org/wiki/Ivy_League)
 
 ### Future work
 * scrape Urban Dictionary
