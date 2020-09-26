@@ -39,7 +39,11 @@ Useful for combing through a list of spotty data and deciding what to keep.
 
 ## Dictionaries
 
-### Celebs ([`celebs.dict`](/dictionaries/celebs.dict))
+#### A note on scoring
+
+I've scored these dictionaries roughly using [the rules proposed here](https://www.alexboisvert.com/xwordlist/guidelines.php). Scores are a verrrry rough estimate based mostly on how well _I_ know the terms in these lists/how excited _I personally_ would be to see them in a crossword, and so are inherently going to be shaped by my own exposures, biases, etc. Take these with many grains of salt and please re-score where appropriate!
+
+### Celebs ([`celebs.dict`](/dictionaries/celebs.dict) || [`celebs-scored.dict`](/dictionaries/celebs-scored.dict))
 
 Sourced from:
 * [The Simpsons cast](https://en.wikipedia.org/wiki/List_of_The_Simpsons_cast_members), and Simpsons Guest Stars [pt. 1](https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars_(seasons_1%E2%80%9320) and [pt. 2](https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars), because it's a Who's Who of actors and other celebrities
@@ -79,7 +83,7 @@ Sourced from:
 
 Honestly I just looked at the top [UrbanDictionary](https://www.urbandictionary.com/) words by letter and the current most popular words and grabbed whatever looked interesting and wasn't already in CrossFire's dictionary (plus some word associating).
 
-### Colleges and Universities ([`colleges.dict`](/dictionaries/colleges.dict))
+### Colleges and Universities ([`colleges.dict`](/dictionaries/colleges.dict) || [`colleges-scored.dict`](/dictionaries/colleges-scored.dict))
 Sourced from:
 * [US News Top Liberal Arts Colleges](https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges)
 * [The Ivy League](https://en.wikipedia.org/wiki/Ivy_League)
