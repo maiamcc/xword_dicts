@@ -4,13 +4,13 @@ import sys
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
 from vet import vet_cmd
-from wiki import rank_cmd
+from wiki import wikisort_cmd
 
 
 CMDS_TO_FUNCS = {
     'dedupe': dedupe_cmd,
     'combinate': combinate_cmd,
-    'rank': rank_cmd,
+    'wikisort': wikisort_cmd,
     'vet': vet_cmd,
                  }
 

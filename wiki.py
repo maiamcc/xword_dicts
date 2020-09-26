@@ -37,14 +37,14 @@ def views_per_month(name: str) -> int:
     return total_views/num_months
 
 
-def rank_cmd(args: List[str]):
+def wikisort_cmd(args: List[str]):
     if len(args) != 1:
         # TODO: let you set in-prog vet file/output file/resume or restart vet?
         raise Exception('`rank` requires exactly one arg (path to file to dedupe)')
-    rank_file(args[0])
+    wikisort_file(args[0])
 
 
-def rank_file(file: str):
+def wikisort_file(file: str):
     _, names = utils.file_to_list(file)
     scores = {}
     couldnt_find = []
