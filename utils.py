@@ -96,9 +96,12 @@ def get_crossfire_default_dict() -> set:
     # TODO: make sure tiny common words like "THE" end up in here
     return set(clean(entry.split(';')[0].lower()) for entry in entries)
 
-
-# d = utils.get_crossfire_default_dict()
-# >>> from nltk.corpus import reuters
-# >>> for wd in rwords:
-#     ...     if wd.isalpha() and wd not in d:
-#     ...         notin.add(wd)
+# import utils
+# xfire = utils.get_crossfire_default_dict()
+# _, wds = utils.file_to_list('nltk-words-full.dict')
+# megadict = xfire|set(wds)
+# from nltk.corpus import gutenberg
+# notin = set()
+# for wd in gutenberg.words('austen-emma.txt'):
+#     if wd.isalpha() and utils.clean(wd) not in megadict:
+#         notin.add(wd)
