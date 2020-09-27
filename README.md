@@ -69,7 +69,7 @@ for (i = 0; i < results.length; i++) {
 ```
 Otherwise, just copy/paste.
 
-### Websites & Apps ([`websites.dict`](/dictionaries/websites.dict))
+### Websites & Apps ([`websites.dict`](/dictionaries/websites.dict) || [`websites-sorted.dict`](/dictionaries/websites-sorted.dict))
 
 Popular websites and apps. (Because of the nature of the source material, contains lots of news media, too.)
 
@@ -79,9 +79,18 @@ Sourced from:
 * [Wikipedia: Most Downloaded iOS Apps](https://en.wikipedia.org/wiki/App_Store_(iOS)#Most_downloaded_apps)
 * [Wikipedia: Most Downloaded Android Apps](https://en.wikipedia.org/wiki/List_of_most-downloaded_Google_Play_applications)
 
-### UrbanDictionary Miscellany ([`urbandictionary.dict`](/dictionaries/urbandictionary.dict))
+### UrbanDictionary Miscellany ([`urbandictionary.dict`](/dictionaries/urbandictionary.dict) || [`urbandictionary-sorted.dict`](/dictionaries/urbandictionary-sorted.dict))
 
 Honestly I just looked at the top [UrbanDictionary](https://www.urbandictionary.com/) words by letter and the current most popular words and grabbed whatever looked interesting and wasn't already in CrossFire's dictionary (plus some word associating).
+
+### Netspeak ([`netspeak.dict`](/dictionaries/netspeak.dict) || [`netspeak-sorted.dict`](/dictionaries/netspeak-sorted.dict))
+Chat acronyms/abbreviations and netspeak (with some other internet-related words thrown in). Mostly low-scored acronyms suitable for filler, but there are some interesting entries in here too.
+
+Sourced from:
+# [Wiktionary: English Internet Slang](https://en.wiktionary.org/wiki/Appendix:English_internet_slang)
+# [Lifewire: Internet Slang Dictionary](https://www.lifewire.com/urban-internet-slang-dictionary-3486341)
+# [Netlingo: Online Dating Terms](https://www.netlingo.com/shop/Top_50_Online_Dating_Terms.pdf)
+# [Netlingo: Acroynms](https://www.netlingo.com/acronyms.php)
 
 ### Colleges and Universities ([`colleges.dict`](/dictionaries/colleges.dict) || [`colleges-scored.dict`](/dictionaries/colleges-scored.dict))
 Sourced from:
@@ -89,12 +98,10 @@ Sourced from:
 * [The Ivy League](https://en.wikipedia.org/wiki/Ivy_League)
 
 ### Future work
-* scrape Urban Dictionary
 * scrape any number of wiki categories and then rank popularity
 * The Simpsons locations
 * top N lists
 * NYT_first_said bot
-* some slang dictionary / internet acronym list
 * Simpsons characters and places (see [characters](https://en.wikipedia.org/wiki/List_of_The_Simpsons_characters) and [recurring characters](https://en.wikipedia.org/wiki/List_of_recurring_The_Simpsons_characters#TOP), [Springfield](https://en.wikipedia.org/wiki/Springfield_(The_Simpsons))
 * Comic book characters/superheros
 * Games (video games, board games)
