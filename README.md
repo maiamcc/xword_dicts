@@ -43,6 +43,9 @@ Useful for combing through a list of spotty data and deciding what to keep.
 
 I've scored these dictionaries roughly using [the rules proposed here](https://www.alexboisvert.com/xwordlist/guidelines.php). Scores are a verrrry rough estimate based mostly on how well _I_ know the terms in these lists/how excited _I personally_ would be to see them in a crossword, and so are inherently going to be shaped by my own exposures, biases, etc. Take these with many grains of salt and please re-score where appropriate!
 
+### Words ([`nltk-words-full.dict`](/dictionaries/nltk-words-full.dict))
+A big ol' wordlist from [NLTK's `words` corpus](https://www.nltk.org/book/ch02.html#homonyms_index_term). Not scored and never will be--just an attempt to fill in the gaps of Crossfire's default wordlist.
+
 ### Celebs ([`celebs.dict`](/dictionaries/celebs.dict) || [`celebs-scored.dict`](/dictionaries/celebs-scored.dict))
 
 Sourced from:
