@@ -1,0 +1,260 @@
+# sexualities
+lesbian;80
+lesbo;70
+lesbos;80
+sappho;80
+sapphic;70
+sapphics;60
+gay;70
+bisexual;80
+bi;60
+bicurious;90
+pansexual;80
+pan;60
+polysexual;80
+queer;70
+queerness;60
+queering;80
+questioning;70
+aromantic;80
+aro;60
+demiromantic;80
+asexual;80
+ace;60
+demisexual;80
+demi;60
+gray asexual;80
+gray a;70
+gray ace;70
+androsexual;70
+gynesexual;70
+gynephilic;70
+skoliosexual;70
+homosexual;80
+homoflexible;90
+heterosexual;80
+straight;70
+hetero;60
+cishet;70
+same gender loving;70
+SGL;50
+Same-sex attraction;70
+SSA;50
+LGBTQ;70
+GSM;50
+DSG;50
+MSM;60
+WSW;60
+MLM;60
+WLW;60
+QPOC;70
+QTPOC;70
+QTWOC;70
+
+# gender/trans stuff
+gender binary;90
+dysphoria;70
+gender dysphoria;90
+dysphoric;60
+biological sex;90
+gender euphoria;90
+gender expression;90
+gender fluid;90
+gender fluidity;90
+gender identity;90
+gender neutrois;90
+gender presentation;90
+gender normative;90
+gender non-conforming;90
+GNC;70
+gender variant;70
+gender neutral;90
+all gender;90
+androgynous;80
+androgyny;80
+andro;60
+bigender;80
+nonbinary;90
+enby;70
+cisgender;90
+cis;60
+intersex;80
+agender;80
+genderqueer;90
+pangender;80
+gender fuck;70
+gender fucker;80
+gender fucking;70
+third gender;80
+two-spirit;90
+sex reassignment surgery;90
+SRS;60
+Gender affirming surgery;80
+GAS;50
+bottom surgery;90
+top surgery;90
+pre-op;70
+post-op;70
+non-op;70
+HRT;60
+spiro;70
+up-talk;80
+trans;60
+transgender;80
+transition;70
+transitioning;70
+transman;70
+transwoman;70
+transgender man;90
+transgender woman;90
+transmasculine;90
+transfeminine;90
+transmasc;80
+transfem;80
+transfemme;80
+transsexual;80
+transvestite;80
+female-to-male;70
+male-to-female;70
+FtM;60
+MtF;60
+sex assigned at birth;90
+assigned sex at birth;90
+SAAB;50
+assigned at birth;80
+assigned female at birth;90
+assigned male at birth;90
+AMAB;50
+AFAB;50
+MAAB;50
+FAAB;50
+cross-dresser;80
+cross-dressing;70
+
+# phobias/-isms/less fun stuff
+biphobia;90
+biphobic;80
+biphobe;80
+bisexual erasure;90
+bi erasure;80
+chaser;70
+T chaser;70
+cisnormativity;90
+cissexism;90
+closeted;80
+in the closet;90
+come out;90
+coming out;90
+came out;90
+deadname;80
+deadnamed;80
+deadnaming;80
+down low;90
+heteronormative;90
+heteronormativity;80
+heterosexism;80
+heterosexist;80
+homophobia;90
+homophobic;90
+homophobe;80
+lesbophobia;80
+lesbophobic;80
+lesbophobe;80
+minority stress;90
+misgender;80
+misgendered;80
+misgendering;80
+TERF;60
+TRUSCUM;60
+transmisogyny;90
+transmisogynist;80
+transmisogynists;80
+transphobia;90
+transphobic;90
+transphobe;80
+hermaphrodite;80
+hermaphrodites;80
+hermaphroditic;80
+
+# presentation/identity/slang/nonsense
+butch;70
+femme;70
+dyke;70
+stud;70
+boi;70
+drag king;90
+drag queen;90
+fag;70
+faggot;70
+feminine-presenting;80
+feminine-of-center;80
+fem-of-center;80
+femme-of-center;80
+FOC;50
+masculine-presenting;80
+masculine-of-center;80
+masc-of-center;80
+MOC;50
+lipstick lesbian;90
+useless lesbian;90
+chapstick lesbian;90
+lesbian sheep;90
+lesbian until graduation;90
+LUG;50
+passing;70
+metrosexual;90
+Babadook;90
+The Babadook;90
+bi icon;90
+pillow princess;90
+power bottom;90
+service bottom;90
+service top;90
+vers;70
+On T;70
+taking T;90
+titty pills;90
+titty skittles;90
+smartitties;90
+chicklets;80
+anticistamines;90
+mammary mints;90
+tit tacs;90
+breast mints;90
+antiboyotics;90
+neovagina;90
+
+# relationships
+polyamory;80
+polyamorous;80
+polyam;70
+poly;60
+polycule;90
+metamour;90
+throuple;90
+
+# Pronouns
+PGP;40
+PGPs;40
+ze;40
+zir;40
+zi/zir;50
+zi/zir/zirs;50
+zi/hir;50
+zi/hir/hirs;50
+sie;40
+hir;40
+hirs;40
+sie/hir/hirs;50
+ey;40
+eyr;40
+they/them/their;50
+they/them/theirs;50
+she/her;50
+she/her/hers;50
+he/him;50
+he/him/his;50
+she/they;50
+he/they;50
+gender pronouns;90
+preferred pronouns;90
