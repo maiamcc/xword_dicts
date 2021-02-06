@@ -90,10 +90,10 @@ Honestly I just looked at the top [UrbanDictionary](https://www.urbandictionary.
 Chat acronyms/abbreviations and netspeak (with some other internet-related words thrown in). Mostly low-scored acronyms suitable for filler, but there are some interesting entries in here too.
 
 Sourced from:
-# [Wiktionary: English Internet Slang](https://en.wiktionary.org/wiki/Appendix:English_internet_slang)
-# [Lifewire: Internet Slang Dictionary](https://www.lifewire.com/urban-internet-slang-dictionary-3486341)
-# [Netlingo: Online Dating Terms](https://www.netlingo.com/shop/Top_50_Online_Dating_Terms.pdf)
-# [Netlingo: Acroynms](https://www.netlingo.com/acronyms.php)
+* [Wiktionary: English Internet Slang](https://en.wiktionary.org/wiki/Appendix:English_internet_slang)
+* [Lifewire: Internet Slang Dictionary](https://www.lifewire.com/urban-internet-slang-dictionary-3486341)
+* [Netlingo: Online Dating Terms](https://www.netlingo.com/shop/Top_50_Online_Dating_Terms.pdf)
+* [Netlingo: Acroynms](https://www.netlingo.com/acronyms.php)
 
 ### Colleges and Universities ([`colleges.dict`](/dictionaries/colleges.dict) || [`colleges-scored.dict`](/dictionaries/colleges-scored.dict))
 Sourced from:
