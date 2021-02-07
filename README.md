@@ -30,6 +30,9 @@ For the list at $FILENAME, present each entry and let user indicate with `y/n` w
 
 Useful for combing through a list of spotty data and deciding what to keep.
 
+#### `transform [fromstr] [tostr]`
+For all elements from all dictionaries (the crossfire default dictionary and the `.dict` files in the `dictionaries/` directory of this repo), find those that are still valid dictionary elements when all instances of `fromstr` are replaced with `tostr`.
+
 ### Recommended flow:
 1. get raw data from source (API, scrape, copy+paste from a "top 100" list, etc.), save as newline-separated list at `data.raw`
 2. dedupe

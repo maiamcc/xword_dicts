@@ -1,4 +1,5 @@
 import os
+import os.path
 from typing import List
 
 CROSSFILE_DEFAULT_DICT_PATH = '/Library/CrossFire/default.dict'
@@ -105,7 +106,9 @@ def get_crossfire_default_dict() -> set:
 def get_all_dicts() -> set:
     so_far = get_crossfire_default_dict()
 
-    dict_paths = [path for path in os.listdir('dictionaries') if path.endswith('.dict')]
+    dict_paths = [os.path.join('dictionaries', path)
+                  for path in os.listdir('dictionaries')
+                  if path.endswith('.dict')]
     for path in dict_paths:
         so_far.update(get_dict_at_path(path))
 

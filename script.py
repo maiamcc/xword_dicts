@@ -4,6 +4,7 @@ import sys
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
 from score import score_cmd
+from transform import transform_cmd
 from vet import vet_cmd
 from wiki import wikisort_cmd
 
@@ -12,6 +13,7 @@ CMDS_TO_FUNCS = {
     'dedupe': dedupe_cmd,
     'combinate': combinate_cmd,
     'score': score_cmd,
+    'transform': transform_cmd,
     'vet': vet_cmd,
     'wikisort': wikisort_cmd,
 }
