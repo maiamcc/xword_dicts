@@ -46,7 +46,7 @@ I've scored these dictionaries roughly using [the rules proposed here](https://w
 ### Words ([`nltk-words-full.dict`](/dictionaries/nltk-words-full.dict))
 A big ol' wordlist from [NLTK's `words` corpus](https://www.nltk.org/book/ch02.html#homonyms_index_term). Not scored and never will be--just an attempt to fill in the gaps of Crossfire's default wordlist.
 
-### Celebs ([`celebs.dict`](/dictionaries/celebs.dict) || [`celebs-scored.dict`](/dictionaries/celebs-scored.dict))
+### Celebs ([`celebs-scored.dict`](/dictionaries/celebs-scored.dict))
 
 Sourced from:
 * [The Simpsons cast](https://en.wikipedia.org/wiki/List_of_The_Simpsons_cast_members), and Simpsons Guest Stars [pt. 1](https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars_(seasons_1%E2%80%9320) and [pt. 2](https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars), because it's a Who's Who of actors and other celebrities
@@ -72,7 +72,7 @@ for (i = 0; i < results.length; i++) {
 ```
 Otherwise, just copy/paste.
 
-### Websites & Apps ([`websites.dict`](/dictionaries/websites.dict) || [`websites-scored.dict`](/dictionaries/websites-scored.dict))
+### Websites & Apps ([`websites-scored.dict`](/dictionaries/websites-scored.dict))
 
 Popular websites and apps. (Because of the nature of the source material, contains lots of news media, too.)
 
@@ -82,11 +82,11 @@ Sourced from:
 * [Wikipedia: Most Downloaded iOS Apps](https://en.wikipedia.org/wiki/App_Store_(iOS)#Most_downloaded_apps)
 * [Wikipedia: Most Downloaded Android Apps](https://en.wikipedia.org/wiki/List_of_most-downloaded_Google_Play_applications)
 
-### UrbanDictionary Miscellany ([`urbandictionary.dict`](/dictionaries/urbandictionary.dict) || [`urbandictionary-scored.dict`](/dictionaries/urbandictionary-scored.dict))
+### UrbanDictionary Miscellany ([`urbandictionary-scored.dict`](/dictionaries/urbandictionary-scored.dict))
 
 Honestly I just looked at the top [UrbanDictionary](https://www.urbandictionary.com/) words by letter and the current most popular words and grabbed whatever looked interesting and wasn't already in CrossFire's dictionary (plus some word associating).
 
-### Netspeak ([`netspeak.dict`](/dictionaries/netspeak.dict) || [`netspeak-scored.dict`](/dictionaries/netspeak-scored.dict))
+### Netspeak ([`netspeak-scored.dict`](/dictionaries/netspeak-scored.dict))
 Chat acronyms/abbreviations and netspeak (with some other internet-related words thrown in). Mostly low-scored acronyms suitable for filler, but there are some interesting entries in here too.
 
 Sourced from:
@@ -95,12 +95,12 @@ Sourced from:
 * [Netlingo: Online Dating Terms](https://www.netlingo.com/shop/Top_50_Online_Dating_Terms.pdf)
 * [Netlingo: Acroynms](https://www.netlingo.com/acronyms.php)
 
-### Colleges and Universities ([`colleges.dict`](/dictionaries/colleges.dict) || [`colleges-scored.dict`](/dictionaries/colleges-scored.dict))
+### Colleges and Universities ([`colleges-scored.dict`](/dictionaries/colleges-scored.dict))
 Sourced from:
 * [US News Top Liberal Arts Colleges](https://www.usnews.com/best-colleges/rankings/national-liberal-arts-colleges)
 * [The Ivy League](https://en.wikipedia.org/wiki/Ivy_League)
 
-### Queer/LGBTQIA+ ([`queer.dict`](/dictionaries/queer.dict) || [`queer-scored.dict`](/dictionaries/queer-scored.dict))
+### Queer/LGBTQIA+ ([`queer-scored.dict`](/dictionaries/queer-scored.dict))
 Because dear god we need more queer representation in crosswords. Note that just because a word appears in this list does not mean that it's widely used or even necessarily acceptable: e.g. I included "hermaphrodite", which is generally not used for people anymore (instead, use "intersex"), "transsexual", which has fallen out of favor with younger folks (instead, use "transgender"), and "throuple", which no actual polyamorous person I've met would touch with a ten-foot pole (my social circles prefer "triad" or "vee").
 
 Sourced from:
