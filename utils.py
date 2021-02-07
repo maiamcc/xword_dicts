@@ -1,3 +1,4 @@
+import os
 from typing import List
 
 CROSSFILE_DEFAULT_DICT_PATH = '/Library/CrossFire/default.dict'
@@ -86,22 +87,27 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
 
 
 def clean(s: str) -> str:
-    for ch in ['.', '-', '"', '\'', ',', '/', ' ', '\'']:
+    for ch in ['.', '-', '"', '\'', ',', '/', ' ', '\'', '/']:
         s = s.replace(ch, '').lower()
     return s
 
 
-def get_crossfire_default_dict() -> set:
-    _, entries = file_to_list(CROSSFILE_DEFAULT_DICT_PATH)
+def get_dict_at_path(path: str) -> set:
+    _, entries = file_to_list(path)
     # TODO: make sure tiny common words like "THE" end up in here
     return set(clean(entry.split(';')[0].lower()) for entry in entries)
 
-# import utils
-# xfire = utils.get_crossfire_default_dict()
-# _, wds = utils.file_to_list('nltk-words-full.dict')
-# megadict = xfire|set(wds)
-# from nltk.corpus import gutenberg
-# notin = set()
-# for wd in gutenberg.words('austen-emma.txt'):
-#     if wd.isalpha() and utils.clean(wd) not in megadict:
-#         notin.add(wd)
+
+def get_crossfire_default_dict() -> set:
+    return get_dict_at_path(CROSSFILE_DEFAULT_DICT_PATH)
+
+
+def get_all_dicts() -> set:
+    so_far = get_crossfire_default_dict()
+
+    dict_paths = [path for path in os.listdir('dictionaries') if path.endswith('.dict')]
+    for path in dict_paths:
+        so_far.update(get_dict_at_path(path))
+
+    # TODO: pull in any additional dicts specified in env vars, configs, etc.
+    return so_far
