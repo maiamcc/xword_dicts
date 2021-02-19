@@ -89,6 +89,9 @@ Sourced from:
 
 Honestly I just looked at the top [UrbanDictionary](https://www.urbandictionary.com/) words by letter and the current most popular words and grabbed whatever looked interesting and wasn't already in CrossFire's dictionary (plus some word associating).
 
+This dictionary has since been supplemented with the [Dictionary.com Slang Dictionary](https://www.dictionary.com/e/slang/).
+
+This is not a complete or coherent list of anything; it's just some random slang and also other stuff. (I did my best to remove all inappropriate words but some may have snuck by me.)
 ### Netspeak ([`netspeak-scored.dict`](/dictionaries/netspeak-scored.dict))
 Chat acronyms/abbreviations and netspeak (with some other internet-related words thrown in). Mostly low-scored acronyms suitable for filler, but there are some interesting entries in here too.
 
