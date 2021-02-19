@@ -7,6 +7,7 @@ CROSSFILE_DEFAULT_DICT_PATH = '/Library/CrossFire/default.dict'
 CONFIG_PATH = 'config.json'
 
 CONFIG_KEY_EXTRA_DICT_DIRS = 'extra_dict_dirs'
+CONFIG_KEY_IGNORE_DICTS = 'ignore_dicts'
 
 
 def file_to_list(file: str, do_dedupe=True) -> (List[str], List[str]):
@@ -109,12 +110,17 @@ def get_crossfire_default_dict() -> set:
 
 def get_all_dicts() -> set:
     so_far = get_crossfire_default_dict()
-    dict_dirs = ['dictionaries'] + get_config().get(CONFIG_KEY_EXTRA_DICT_DIRS, [])
+
+    config = get_config()
+    ignore_dicts = set(config.get(CONFIG_KEY_IGNORE_DICTS, []))
+    dict_dirs = ['dictionaries'] + config.get(CONFIG_KEY_EXTRA_DICT_DIRS, [])
+
     dict_paths = []
-    for directory in dict_dirs:
-        dict_paths.extend([os.path.join(directory, path)
-                           for path in os.listdir(directory)
-                           if path.endswith('.dict')])
+    for ddir in dict_dirs:
+        dict_paths.extend([os.path.join(ddir, path)
+                           for path in os.listdir(ddir)
+                           if path.endswith('.dict')
+                           and path not in ignore_dicts])
 
     for path in dict_paths:
         so_far.update(get_dict_at_path(path))
