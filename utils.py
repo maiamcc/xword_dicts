@@ -93,9 +93,7 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
 
 
 def clean(s: str) -> str:
-    for ch in ['.', '-', '"', '\'', ',', '/', ' ', '\'', '/']:
-        s = s.replace(ch, '').lower()
-    return s
+    return ''.join([ch for ch in s.lower() if ch.isalnum()])
 
 
 def get_dict_at_path(path: str) -> set:
