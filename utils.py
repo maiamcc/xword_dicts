@@ -1,8 +1,12 @@
+import json
 import os
 import os.path
 from typing import List
 
 CROSSFILE_DEFAULT_DICT_PATH = '/Library/CrossFire/default.dict'
+CONFIG_PATH = 'config.json'
+
+CONFIG_KEY_EXTRA_DICT_DIRS = 'extra_dict_dirs'
 
 
 def file_to_list(file: str, do_dedupe=True) -> (List[str], List[str]):
@@ -105,12 +109,24 @@ def get_crossfire_default_dict() -> set:
 
 def get_all_dicts() -> set:
     so_far = get_crossfire_default_dict()
+    dict_dirs = ['dictionaries'] + get_config().get(CONFIG_KEY_EXTRA_DICT_DIRS, [])
+    dict_paths = []
+    for directory in dict_dirs:
+        dict_paths.extend([os.path.join(directory, path)
+                           for path in os.listdir(directory)
+                           if path.endswith('.dict')])
 
-    dict_paths = [os.path.join('dictionaries', path)
-                  for path in os.listdir('dictionaries')
-                  if path.endswith('.dict')]
     for path in dict_paths:
         so_far.update(get_dict_at_path(path))
 
-    # TODO: pull in any additional dicts specified in env vars, configs, etc.
     return so_far
+
+
+def get_config() -> dict:
+    if not os.path.exists(CONFIG_PATH):
+        return {}
+
+    with open(CONFIG_PATH) as f:
+        data = json.load(f)
+
+    return data
