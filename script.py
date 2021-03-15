@@ -8,6 +8,7 @@ from score import score_cmd
 from transform import transform_cmd
 from vet import vet_cmd
 from wiki import wikisort_cmd
+from wordbank import wordbank_cmd
 
 
 CMDS_TO_FUNCS = {
@@ -18,6 +19,7 @@ CMDS_TO_FUNCS = {
     'transform': transform_cmd,
     'vet': vet_cmd,
     'wikisort': wikisort_cmd,
+    'wordbank': wordbank_cmd,
 }
 
 AVAILABLE_CMDS = ", ".join(CMDS_TO_FUNCS.keys())
