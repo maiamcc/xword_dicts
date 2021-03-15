@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 import sys
 
+from anagram import anagram_cmd
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
 from new_entries import new_entries_cmd
@@ -12,8 +13,9 @@ from wordbank import wordbank_cmd
 
 
 CMDS_TO_FUNCS = {
-    'dedupe': dedupe_cmd,
+    'anagram': anagram_cmd,
     'combinate': combinate_cmd,
+    'dedupe': dedupe_cmd,
     'new': new_entries_cmd,
     'score': score_cmd,
     'transform': transform_cmd,
