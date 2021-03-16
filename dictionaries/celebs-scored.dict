@@ -833,9 +833,6 @@ Reinhart;50
 Steve Buscemi;90
 Buscemi;70
 Robert Wagner;70
-Conan O'Brien;90
-Conan;70
-O'Brien;60
 Will Arnett;70
 Arnett;60
 Laura Ingraham;70
@@ -1861,8 +1858,9 @@ Trevor Noah;90
 Trevor;50
 Jimmy Fallon;80
 Fallon;60
-Conan O’Brien;90
-O’Brien;70
+Conan O'Brien;90
+Conan;70
+O'Brien;60
 Colin Mochrie;80
 Colin;50
 Mochrie;70
@@ -1961,3 +1959,225 @@ ZZ Top;70
 They Might Be Giants;90
 TMBG;60
 Hozier;90
+
+# Queer Actors In Particular
+Alan Cumming;90
+Alan;60
+Cumming;60
+Alia Shawkat;90
+Alia;60
+Shawkat;60
+Amandla Stenberg;90
+Amandla;60
+Stenberg;60
+Andrew Rannells;90
+Rannells;60
+Angelina Jolie;90
+Angelina;60
+Jolie;60
+Anna Paquin;90
+Paquin;60
+Ariela Barer;90
+Ariela;60
+Barer;60
+Asia Kate Dillon;90
+Kate;60
+Dillon;60
+Asia Kate;40
+Kate Dillon;40
+Aubrey Plaza;90
+Aubrey;60
+Bd Wong;80
+Wong;60
+Beanie Feldstein;90
+Feldstein;60
+Ben Platt;90
+Platt;60
+Ben Whishaw;80
+Whishaw;60
+Bex Taylor-klaus;90
+Bex;60
+Taylor-klaus;60
+Billy Porter;90
+Bobbi Menuez;70
+Bobbi;60
+Menuez;50
+Bobbi Salvör Menuez;80
+Salvör;50
+Bobbi Salvör;40
+Salvör Menuez;40
+Cara Delevingne;90
+Cara;60
+Delevingne;70
+Carrie Brownstein;80
+Carrie;60
+Brownstein;60
+Clea Duvall;90
+Clea;60
+Duvall;60
+Cynthia Nixon;90
+Dan Levy;90
+Dan;60
+Daniela Sea;80
+Daniela;60
+David Hyde Pierce;90
+Hyde;70
+David Hyde;40
+Hyde Pierce;40
+Denis O'hare;90
+Denis;60
+O'hare;60
+Eddie Izzard;90
+Eddie;60
+Elise Bauman;90
+Elise;60
+Bauman;60
+Ellen Degeneres;90
+Ellen;60
+Degeneres;60
+Elliot Page;90
+Elliot;60
+Evan Rachel Wood;90
+Evan;60
+Evan Rachel;40
+Rachel Wood;40
+Ezra Miller;90
+Fortune Feimster;90
+Feimster;60
+Guillermo Díaz;90
+Guillermo;60
+Díaz;60
+Harvey Fierstein;90
+Fierstein;60
+Holland Taylor;90
+Ian Mckellen;90
+Ian;60
+Mckellen;70
+Indya Moore;80
+Indya;60
+Jacob Tobia;80
+Tobia;50
+Jamie Clayton;90
+Jamie;60
+Clayton;60
+Janelle Monae;90
+Janelle;70
+Monae;70
+Jeffrey Bowyer-Chapman;90
+Jeffrey;60
+Bowyer-Chapman;60
+Jenny Shimizu;90
+Shimizu;70
+Jill Soloway;90
+Jill;60
+Soloway;60
+Jim Parsons;90
+Jim;60
+Jodie Foster;90
+Jodie;70
+Joe Mantello;90
+Joe;60
+Mantello;70
+Joel Grey;90
+John Early;90
+Jonathan Van Ness;90
+Jonathan Van;40
+Van Ness;40
+Kaitlyn Alexander;80
+Kaitlyn;70
+Kate Mckinnon;90
+Mckinnon;80
+Keiynan Lonsdale;80
+Keiynan;60
+Lonsdale;60
+Kiersey Clemons;80
+Kiersey;60
+Clemons;60
+Kristen Stewart;90
+Kristen;60
+Lachlan Watson;80
+Lachlan;60
+Laurel Holloman;90
+Holloman;60
+Laverne Cox;90
+Laverne;70
+Lea Delaria;80
+Delaria;60
+Lee Pace;80
+Lena Waithe;80
+Waithe;60
+Lily Tomlin;90
+Tomlin;70
+Liv Hewson;80
+Hewson;60
+Luke Evans;80
+Mara Wilson;90
+Matt Bomer;90
+Bomer;60
+Max Jenkins;80
+Jenkins;60
+Michael Kearns;80
+Kearns;60
+Miley Cyrus;90
+Miley;70
+Nathan Lane;90
+Nathan;60
+Neil Patrick Harris;90
+Neil;60
+Neil Patrick;40
+Patrick Harris;40
+Nico Tortorella;90
+Nico;60
+Tortorella;60
+Niecey Nash;90
+Niecey;60
+Noah Galvin;90
+Galvin;60
+Rebecca Sugar;90
+Rhea Butcher;90
+Richard Chamberlain;80
+Richard;60
+Robin de Jesus;90
+Robin de;40
+de Jesus;40
+Robin Lord Taylor;90
+Robin Lord;40
+Lord Taylor;40
+Rock Hudson;90
+Rose Mcgowan;80
+Mcgowan;60
+Ruby Rose;90
+Rutina Wesley;80
+Rutina;60
+Sam Smith;80
+Samira Wiley;90
+Samira;60
+Wiley;60
+Sara Ramirez;90
+Sara;60
+Ramirez;60
+Sarah Paulson;80
+Paulson;60
+Sasha Lane;80
+Sasha;60
+Shannon Purser;80
+Taylor Mac;90
+Tessa Thompson;90
+Tessa;60
+Tom Lenk;80
+Lenk;60
+Tommy Dorfman;80
+Tommy;60
+Dorfman;60
+Tracy Lysette;80
+Lysette;60
+Victor Garber;90
+Garber;70
+Wanda Sykes;90
+Wanda;60
+Sykes;70
+Wilson Cruz;80
+Cruz;60
+Zachary Quinto;90
+Zachary;60
+Quinto;60
