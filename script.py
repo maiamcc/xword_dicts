@@ -3,6 +3,7 @@ import sys
 
 from anagram import anagram_cmd
 from before_after import before_after_cmd
+from contains_in_order import contains_in_order_cmd
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
 from new_entries import new_entries_cmd
@@ -17,6 +18,7 @@ CMDS_TO_FUNCS = {
     'anagram': anagram_cmd,
     'before_after': before_after_cmd,
     'combinate': combinate_cmd,
+    'contains_in_order': contains_in_order_cmd,
     'dedupe': dedupe_cmd,
     'new': new_entries_cmd,
     'score': score_cmd,
