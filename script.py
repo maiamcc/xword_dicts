@@ -2,6 +2,7 @@
 import sys
 
 from anagram import anagram_cmd
+from before_after import before_after_cmd
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
 from new_entries import new_entries_cmd
@@ -14,6 +15,7 @@ from wordbank import wordbank_cmd
 
 CMDS_TO_FUNCS = {
     'anagram': anagram_cmd,
+    'before_after': before_after_cmd,
     'combinate': combinate_cmd,
     'dedupe': dedupe_cmd,
     'new': new_entries_cmd,
