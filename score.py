@@ -4,6 +4,7 @@ from typing import List
 import utils
 
 SCORES = {
+    "0": 100,
     "9": 90,
     "8": 80,
     "7": 70,
@@ -13,6 +14,8 @@ SCORES = {
     "3": 30,
     "2": 20,
     "1": 10,
+    "x": 0
+
 }
 def fname_scored(file: str) -> str: return '{}.scored'.format(file)
 def fname_in_prog_score(file: str) -> str: return '{}.in_prog_score'.format(file)
@@ -69,7 +72,7 @@ def score_file(basefile: str):
 def ask_user_score() -> int:
     val = input('> ')
     if not val:
-        return 1
+        return 0
     if val.lower() in SCORES:
         return SCORES[val.lower()]
     return ask_user_score()
