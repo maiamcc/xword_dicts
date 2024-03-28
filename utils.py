@@ -10,16 +10,27 @@ CONFIG_KEY_EXTRA_DICT_DIRS = 'extra_dict_dirs'
 CONFIG_KEY_IGNORE_DICTS = 'ignore_dicts'
 
 
-def file_to_list(file: str, do_dedupe=True) -> (List[str], List[str]):
+def file_to_list(file: str, strip_scores=True, do_dedupe=True) -> (List[str], List[str]):
     """Returns frontmatter (list of comment lines) and list of elements."""
     with open(file) as infile:
         contents = infile.read()
     li = contents.strip().split('\n')
     frontmatter = get_frontmatter(li)
     elems = [elem.strip() for elem in li if elem.strip() != '' and not elem.startswith('#')]
+
+    if strip_scores:
+        elems = [strip_score(elem) for elem in elems]
     if do_dedupe:
         elems = dedupe(elems)
+
     return frontmatter, elems
+
+
+def strip_score(elem: str) -> str:
+    """FOOBAR;69 --> FOOBAR"""
+    if ';' not in elem:
+        return elem
+    return elem.split(';', 1)[0]
 
 
 def list_to_file(file: str, li: List, do_dedupe=True):
@@ -93,7 +104,7 @@ def print_progress_bar(iteration, total, prefix='Progress', suffix='Complete',
 
 
 def clean(s: str) -> str:
-    return ''.join([ch for ch in s.lower() if ch.isalnum()])
+    return ''.join([ch for ch in s.upper() if ch.isalnum()])
 
 
 def get_dict_at_path(path: str) -> set:

@@ -6,6 +6,7 @@ from before_after import before_after_cmd
 from contains_in_order import contains_in_order_cmd
 from combinate import combinate_cmd
 from dedupe import dedupe_cmd
+from diff import diff_cmd
 from new_entries import new_entries_cmd
 from score import score_cmd
 from transform import transform_cmd
@@ -20,6 +21,7 @@ CMDS_TO_FUNCS = {
     'combinate': combinate_cmd,
     'contains_in_order': contains_in_order_cmd,
     'dedupe': dedupe_cmd,
+    'diff': diff_cmd,
     'new': new_entries_cmd,
     'score': score_cmd,
     'transform': transform_cmd,

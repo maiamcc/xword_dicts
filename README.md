@@ -15,6 +15,11 @@ Most commands take a `filename` arg; this should be the path to a file containin
 #### `dedupe [filename]`
 Dedupe the list at $FILENAME, output to a new file.
 
+#### `diff [file1] [file2]`
+Output all the elements in file1 that are not in file2.
+
+(NB: not a true diff, as it is a) unidirectional and b) ignores word scores and order in which they appear.)
+
 #### `combinate [filename]`
 Most useful on lists of names. For the list at $FILENAME, generate crossword candidates for each entry: specifically, every individual (space-separated) element of the entry (if not already an accepted Crossfire word), and every pairwise combination of sequential elements. Output to a new file.
 
