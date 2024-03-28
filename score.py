@@ -14,7 +14,8 @@ SCORES = {
     "3": 30,
     "2": 20,
     "1": 10,
-    "x": 0
+    "x": 0,
+    "q": 1,  # mark things with a question mark and come back later
 
 }
 def fname_scored(file: str) -> str: return '{}.scored'.format(file)
@@ -72,7 +73,7 @@ def score_file(basefile: str):
 def ask_user_score() -> int:
     val = input('> ')
     if not val:
-        return 0
+        return 1  # mark as "hey revisit this""
     if val.lower() in SCORES:
         return SCORES[val.lower()]
     return ask_user_score()

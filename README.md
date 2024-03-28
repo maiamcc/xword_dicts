@@ -30,6 +30,15 @@ For the list at $FILENAME, present each entry and let user indicate with `y/n` w
 
 Useful for combing through a list of spotty data and deciding what to keep.
 
+#### `score [filename]`
+For the list at $FILENAME, present each entry and let user indicate (in broad strokes) a score for that entry. Output the results to a new list. (If you need to stop scoring partway through, your progress will be saved in an interim file.)
+
+- Digits 1->9 correspond to a score of 10, 20, 30 etc.
+- 0 --> 100
+- x --> score of 0 (probably you want to go through after and remove these)
+- q (for question) --> score of 1 (mark this as "revisit later")
+
+
 #### `transform [fromstr] [tostr]`
 For all elements from all dictionaries (the crossfire default dictionary and the `.dict` files in the `dictionaries/` directory of this repo), find those that are still valid dictionary elements when all instances of `fromstr` are replaced with `tostr`.
 
