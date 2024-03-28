@@ -145,3 +145,8 @@ def get_config() -> dict:
         data = json.load(f)
 
     return data
+
+
+def sorted_xwd(li: List[str]) -> List[str]:
+    """Crossword-specific sort: sort by length, THEN alphabetically."""
+    return sorted(li, key=lambda elem: (len(elem), elem))

@@ -20,7 +20,7 @@ def diff_files(file1: str, file2: str):
     set1 = {utils.clean(elem) for elem in elems1}
     set2 = {utils.clean(elem) for elem in elems2}
 
-    result = sorted(list(set1.difference(set2)))
+    result = utils.sorted_xwd(list(set1.difference(set2)))
 
     utils.list_to_file(fname_diffed(file1, file2), result)
 
