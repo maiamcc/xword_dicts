@@ -10,7 +10,7 @@ This repo contains a handful of utils that can be invoked via:
 
 Most commands take a `filename` arg; this should be the path to a file containing a newline-separated list of raw entries to be manipulated. (Copy+paste these off the Internet, fetch via an API, scrape a website, whatever.)
  
-### Available commands are:
+### Dictionary Management Commands:
 
 #### `dedupe [filename]`
 Dedupe the list at $FILENAME, output to a new file.
@@ -38,6 +38,7 @@ For the list at $FILENAME, present each entry and let user indicate (in broad st
 - x --> score of 0 (probably you want to go through after and remove these)
 - q (for question) --> score of 1 (mark this as "revisit later")
 
+### Theme Discovery Commands:
 
 #### `transform [fromstr] [tostr]`
 For all elements from all dictionaries (the crossfire default dictionary and the `.dict` files in the `dictionaries/` directory of this repo), find those that are still valid dictionary elements when all instances of `fromstr` are replaced with `tostr`.
