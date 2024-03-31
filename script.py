@@ -9,6 +9,7 @@ from dedupe import dedupe_cmd
 from diff import diff_cmd
 from new_entries import new_entries_cmd
 from score import score_cmd
+from sort import sort_cmd
 from transform import transform_cmd
 from vet import vet_cmd
 from wiki import wikisort_cmd
@@ -24,6 +25,7 @@ CMDS_TO_FUNCS = {
     'diff': diff_cmd,
     'new': new_entries_cmd,
     'score': score_cmd,
+    'sort': sort_cmd,
     'transform': transform_cmd,
     'vet': vet_cmd,
     'wikisort': wikisort_cmd,

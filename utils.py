@@ -10,7 +10,7 @@ CONFIG_KEY_EXTRA_DICT_DIRS = 'extra_dict_dirs'
 CONFIG_KEY_IGNORE_DICTS = 'ignore_dicts'
 
 
-def file_to_list(file: str, strip_scores=True, do_dedupe=True) -> (List[str], List[str]):
+def file_to_list(file: str, strip_scores=False, do_dedupe=True) -> (List[str], List[str]):
     """Returns frontmatter (list of comment lines) and list of elements."""
     with open(file) as infile:
         contents = infile.read()
@@ -38,6 +38,7 @@ def list_to_file(file: str, li: List, do_dedupe=True):
         li = dedupe(li)
     with open(file, 'w') as outfile:
         outfile.write('\n'.join(li))
+    print(f'Wrote file at:\n\t{file}')
 
 
 def get_frontmatter(lines: List[str]) -> List[str]:
@@ -149,4 +150,4 @@ def get_config() -> dict:
 
 def sorted_xwd(li: List[str]) -> List[str]:
     """Crossword-specific sort: sort by length, THEN alphabetically."""
-    return sorted(li, key=lambda elem: (len(elem), elem))
+    return sorted(li, key=lambda elem: (len(strip_score(elem)), elem))

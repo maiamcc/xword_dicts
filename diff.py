@@ -14,8 +14,8 @@ def diff_files(file1: str, file2: str):
     """
 
     print(f"diffing: {file1} / {file2}")
-    _, elems1 = utils.file_to_list(file1)
-    _, elems2 = utils.file_to_list(file2)
+    _, elems1 = utils.file_to_list(file1, strip_scores=True)
+    _, elems2 = utils.file_to_list(file2, strip_scores=True)
 
     set1 = {utils.clean(elem) for elem in elems1}
     set2 = {utils.clean(elem) for elem in elems2}
