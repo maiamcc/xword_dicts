@@ -25,7 +25,7 @@ def fname_in_prog_score(file: str) -> str: return '{}.in_prog_score'.format(file
 def score_file(basefile: str):
     """
     Read in the file $BASEFILE as newline-separated list, offers elements
-    to user one by one to vet via cmd line to score.
+    to user one via cmd line to score.
     Approved elements are stored in $BASEFILE.scored.
 
     Elements-to-score stored in $BASEFILE.in_prog_score. If this file
@@ -81,6 +81,5 @@ def ask_user_score() -> int:
 
 def score_cmd(args: List[str]):
     if len(args) != 1:
-        # TODO: let you set in-prog vet file/output file/resume or restart vet?
-        raise Exception('`vet` requires exactly one arg (path to file to vet)')
+        raise Exception('`score` requires exactly one arg (path to file to score)')
     score_file(args[0])
