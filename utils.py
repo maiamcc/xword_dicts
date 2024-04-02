@@ -150,4 +150,4 @@ def get_config() -> dict:
 
 def sorted_xwd(li: List[str]) -> List[str]:
     """Crossword-specific sort: sort by length, THEN alphabetically."""
-    return sorted(li, key=lambda elem: (len(strip_score(elem)), elem))
+    return sorted(li, key=lambda elem: (len(strip_score(clean(elem))), elem))

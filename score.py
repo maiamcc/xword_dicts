@@ -83,3 +83,18 @@ def score_cmd(args: List[str]):
     if len(args) != 1:
         raise Exception('`score` requires exactly one arg (path to file to score)')
     score_file(args[0])
+
+
+def score_all_for_file(basefile: str, score: int):
+    """
+    Set score for all elements in $BASEFILE to $SCORE
+    """
+    frontmatter, elems = utils.file_to_list(basefile, strip_scores=True)
+    elems = [f'{elem};{score}' for elem in elems]
+    utils.list_to_file(fname_scored(basefile), frontmatter + utils.sorted_xwd(elems))
+
+
+def score_all_cmd(args: List[str]):
+    if len(args) != 2:
+        raise Exception('`score_all` requires exactly two args (path to file to score, and socre to assign)')
+    score_all_for_file(args[0], args[1])
