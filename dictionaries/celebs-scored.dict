@@ -11,13 +11,16 @@ Daniel Radcliffe;90
 Radcliffe;60
 Leonardo DiCaprio;90
 DiCaprio;70
+Leo DiCaprio;80
 Tom Cruise;90
 Brad Pitt;90
 Charles Chaplin;90
+Charlie Chaplin;90
+Chaplin;60
 Morgan Freeman;90
 Hugh Jackman;90
 Hugh;50
-Jackman;50
+Jackman;60
 Matt Damon;90
 Sylvester Stallone;90
 Sylvester;50
@@ -32,8 +35,6 @@ George Clooney;90
 Clooney;60
 Steven;50
 Harrison Ford;90
-Niro;50
-Robert De;40
 Al Pacino;90
 Pacino;70
 Robert Downey Jr.;90
@@ -44,12 +45,12 @@ Russell Crowe;90
 Crowe;50
 Liam Neeson;90
 Liam;50
-Neeson;50
+Neeson;60
 Kate Winslet;90
 Kate;50
 Winslet;60
 Mark Wahlberg;90
-Wahlberg;70
+Wahlberg;60
 Natalie Portman;90
 Natalie;50
 Portman;60
@@ -60,7 +61,9 @@ Sean;50
 Connery;60
 Orlando Bloom;90
 Dwayne Johnson;90
+Dwayne The Rock Johnson;90
 Dwayne;50
+The Rock; 90
 Jackie Chan;90
 Jackie;50
 Chan;50
@@ -98,13 +101,8 @@ McKellen;60
 Halle Berry;90
 Bruce Willis;90
 Samuel L. Jackson;90
-Samuel L.;40
-L. Jackson;40
 Ben Stiller;90
 Tommy Lee Jones;90
-Tommy;50
-Tommy Lee;40
-Lee Jones;40
 Antonio Banderas;90
 Antonio;50
 Banderas;60
@@ -112,6 +110,7 @@ Denzel Washington;90
 Denzel;50
 Steve Carell;90
 Steve;50
+Steve Martin;80
 Carell;60
 Shia LaBeouf;90
 LaBeouf;60
@@ -129,15 +128,9 @@ Kevin;50
 Jason Biggs;80
 Biggs;50
 Seann William Scott;80
-Seann;50
-William;50
-Seann William;50
-William Scott;40
 Jean-Claude Van Damme;90
-Jean-Claude;70
-Damme;40
-Jean-Claude Van;40
-Van Damme;40
+Jean-Claude;50
+Van Damme;50
 Zach Galifianakis;90
 Zach;50
 Galifianakis;60
@@ -177,9 +170,6 @@ Channing;50
 Ben Affleck;90
 Affleck;60
 Shah Rukh Khan;80
-Rukh;40
-Shah Rukh;40
-Rukh Khan;40
 Jennifer Aniston;90
 Jennifer;50
 Aniston;60
@@ -203,14 +193,11 @@ Hiddleston;70
 Aamir Khan;80
 Aamir;70
 Rajinikanth;60
-Donald Trump;90
-Donald;50
 Barack Obama;90
 Barack;80
 Obama;80
 Eminem;80
 Lady Gaga;90
-Adolf;50
 Cristiano Ronaldo;90
 Cristiano;60
 Ronaldo;60
@@ -227,7 +214,6 @@ Lionel Messi;80
 Lionel;50
 Messi;60
 Lil Wayne;90
-Lil;60
 Miley Cyrus;90
 Miley;60
 Taylor Swift;90
@@ -273,18 +259,13 @@ Bruno Mars;90
 Mariah Carey;90
 Mariah;50
 Carey;60
-Leo DiCaprio;80
 Marilyn;50
 Jennifer Lawrence;90
 Ryan Reynolds;80
 Ryan;50
 The Undertaker;60
-The;1
 Sunny Leone;80
 Tom Hardy;80
-Kristen Stewart;90
-KStew; 70
-Kristen;50
 Charlie Sheen;90
 Charlie;50
 Tom Brady;80
@@ -341,49 +322,40 @@ Ronaldinho;50
 Wayne Rooney;50
 Rooney;50
 John F. Kennedy;90
-John F.;40
-F. Kennedy;40
 George W. Bush;90
-George W.;40
-W. Bush;40
+Dubya;60
 Ronald;50
 Winston;50
 Princess Di;90
+Franklin Delano Roosevelt;90
 Franklin D. Roosevelt;90
-Franklin D.;40
-D. Roosevelt;40
 George H.W. Bush;90
-George H.W.;40
-H.W. Bush;40
-Osama;60
-Osama bin;40
+Osama bin Laden;60
 Che;70
+Che Guevara
 Richard;50
 Vladimir;50
 Putin;70
-Mary, Queen;40
-Queen of;40
-of Scots;40
+Mary, Queen of Scots;90
 Princess Margaret;90
 Margaret;50
 Jesus;70
-Alexander the;40
-the Great;40
+Alexander the Great;90
 Julius;50
+Julius Caesar;90
 Muhammad;70
 Genghis;70
 Aristotle;90
 Plato;90
 Spartacus;90
-Joan;50
-Joan of;40
-of Arc;40
+I Am Spartacus;90
+Joan of Arc;90
 Socrates;90
 Cleopatra;90
 Charlemagne;90
 Tutankhamun;90
-Augustus;70
-Marco;60
+King Tutankhamun;90
+King Tut;90
 Moses;90
 Ragnar Lodbrok;60
 Ragnar;60
@@ -397,17 +369,12 @@ Pythagoras;90
 Abraham;60
 Asoka;70
 Magdalene;80
-William the;40
-the Conqueror;40
-Alfred the;40
 Archimedes;90
 Billie Eilish;90
 Billie;60
 Eilish;60
 Millie Bobby Brown;80
 Millie;50
-Millie Bobby;50
-Bobby Brown;40
 Willow Smith;90
 Maddie Ziegler;70
 Maddie;50
@@ -424,7 +391,6 @@ Greta;50
 Thunberg;60
 Lady Louise Windsor;70
 Louise;50
-Lady Louise;40
 Louise Windsor;40
 JoJo Siwa;60
 JoJo;50
@@ -437,8 +403,6 @@ Mackenzie Foy;70
 Foy;60
 Jackie Evancho;70
 Evancho;60
-Barron Trump;90
-Barron;60
 Jacob Tremblay;70
 Tremblay;60
 Zion Williamson;70
@@ -485,12 +449,10 @@ Linkin Park;90
 Linkin;40
 Led Zeppelin;90
 Red Hot Chili Peppers;90
-Hot Chili;40
 AC/DC;60
 Coldplay;90
 BTS;40
 The Rolling Stones;90
-The Rolling;40
 Rolling Stones;70
 Rolling Stone;70
 Slipknot;80
@@ -499,20 +461,16 @@ Jonas Brothers;90
 Nirvana;70
 Green Day;90
 Guns N' Roses;90
-Guns N';40
-N' Roses;40
 Backstreet Boys;90
-Backstreet;60
 Spice Girls;90
+The Spice Girls;90
 Girls' Generation;60
 Fleetwood Mac;90
-Fleetwood;40
-Kiss;60
 Gorillaz;70
 Bee Gees;80
+The Bee Gees;80
 Foo Fighters;90
 Foo;80
-N.W.A;40
 ABBA;70
 Elon Musk;90
 Elon;60
@@ -533,11 +491,14 @@ Luke Perry;80
 Neil;50
 Mark Zuckerberg;90
 Zuckerberg;90
+Zuck;90
+Zucked;90
 Kirk Douglas;80
 Ellen DeGeneres;90
 Ellen;50
 DeGeneres;80
 Dolly Parton;90
+Dolly;60
 Parton;70
 Ed Sheeran;90
 Sheeran;70
@@ -557,7 +518,6 @@ Reese Witherspoon;90
 Reese;60
 Adam Driver;80
 Snoop Dogg;90
-Dogg;40
 Theodore;50
 Dennis Rodman;80
 Dennis;50
@@ -580,17 +540,13 @@ Paul Rudd;80
 Rachel Weisz;80
 Weisz;60
 Sacha Baron Cohen;90
-Sacha;50
-Cohen;50
-Sacha Baron;40
-Baron Cohen;40
 Matthew Perry;80
 Jason Bateman;80
 Bateman;60
 Stephen King;90
 Jennifer Garner;90
 J.K. Rowling;90
-Rowling;70
+Robert Galbraith;90
 Cate Blanchett;90
 Cate;50
 Blanchett;70
@@ -618,7 +574,6 @@ Elisabeth Moss;80
 Elisabeth;50
 Jeff Goldblum;90
 Goldblum;70
-50 Cent;1
 Anderson Cooper;90
 Ron Howard;80
 Olivia Colman;80
@@ -670,12 +625,10 @@ Smulders;50
 Ringo;70
 John Mulaney;90
 Mulaney;90
-Ellen Page;90
 Patrick Stewart;90
+Sir Patrick Stewart;90
 Bruce Springsteen;90
 Springsteen;80
-Kate McKinnon;90
-McKinnon;80
 Seth Rogen;90
 Rogen;70
 Jack Black;90
@@ -695,6 +648,7 @@ Jonah Hill;80
 Mary-Kate Olsen;90
 Mary-Kate;70
 Olsen;60
+Mary-Kate and Ashley;90
 Angela Bassett;80
 Angela;50
 Bassett;60
@@ -717,9 +671,6 @@ Kiefer Sutherland;70
 Kiefer;60
 Guillermo del Toro;90
 Guillermo;50
-del;50
-Toro;50
-Guillermo del;40
 del Toro;40
 Chris Martin;80
 David Harbour;80
@@ -741,8 +692,6 @@ Monteith;80
 Amy Schumer;80
 Schumer;70
 James Earl Jones;90
-James Earl;40
-Earl Jones;40
 Michael Keaton;80
 Linda Ronstadt;90
 Linda;50
@@ -777,9 +726,6 @@ Melanie;50
 Martha Stewart;90
 Martha;50
 Sarah Michelle Gellar;90
-Gellar;60
-Sarah Michelle;60
-Michelle Gellar;40
 Susan Sarandon;90
 Susan;50
 Sarandon;60
@@ -787,8 +733,7 @@ Lizzy Caplan;80
 Lizzy;50
 Caplan;50
 Neil Patrick Harris;90
-Neil Patrick;40
-Patrick Harris;40
+NPH;60
 Lucy Liu;90
 Liu;70
 Catherine O'Hara;90
@@ -804,9 +749,6 @@ Armisen;50
 Russell Brand;80
 Aaron Paul;80
 Taraji P. Henson;80
-Taraji;70
-Taraji P.;40
-P. Henson;40
 James Stewart;70
 Andy Serkis;70
 Andy;50
@@ -816,6 +758,7 @@ Offerman;60
 Sarah Silverman;90
 Silverman;60
 Mel Brooks;90
+Brooks;60
 Brooke Shields;90
 Richard Branson;70
 Branson;60
@@ -841,9 +784,6 @@ Ingraham;40
 Leslie Mann;70
 Leslie;50
 R. Lee Ermey;70
-Ermey;60
-R. Lee;40
-Lee Ermey;40
 Tina Fey;90
 Tina;50
 Topher Grace;70
@@ -860,12 +800,17 @@ Carmen;50
 Rudy Giuliani;80
 Rudy;50
 Giuliani;60
+Mike Bloomberg;90
+Michael Bloomberg;90
+Bloomberg;60
+El Bloombito;90
 Donald Sutherland;80
 Penny Marshall;80
 Regis Philbin;80
 Regis;70
 Philbin;70
 Stephen Colbert;90
+Colbert;70
 Bill Burr;70
 Danica Patrick;80
 Danica;60
@@ -877,15 +822,14 @@ Judd;70
 Apatow;70
 Christopher Lloyd;80
 Bill de Blasio;90
-Blasio;40
-Bill de;40
-de Blasio;90
+de Blasio;80
 Henry Winkler;70
 Winkler;60
+Lea Salonga;90
+Lea;60
+Salonga;70
 Hugh Laurie;90
 Laurie;60
-Lily Tomlin;90
-Tomlin;70
 Jimmy Kimmel;90
 Kimmel;70
 Ashley Olsen;90
@@ -895,7 +839,7 @@ Camila;50
 Sam Neill;70
 Neill;50
 Goodall;60
-Blink-182;1
+Jane Goodall;80
 Venus Williams;90
 Hugh Hefner;90
 Hefner;70
@@ -919,13 +863,7 @@ Katey;50
 Sagal;60
 Tony;50
 William H. Macy;80
-Macy;60
-William H.;40
-H. Macy;40
 Neil deGrasse Tyson;90
-deGrasse;50
-Neil deGrasse;40
-deGrasse Tyson;40
 Nikolaj Coster-Waldau;60
 Nikolaj;50
 Coster-Waldau;50
@@ -958,14 +896,9 @@ Don Cheadle;70
 Cheadle;60
 Rob Reiner;80
 Reiner;60
-Asia Kate Dillon;90
-Dillon;50
-Asia Kate;40
-Kate Dillon;40
 "Weird Al" Yankovic;90
 Yankovic;80
 "Weird Al";80
-Al" Yankovic;40
 Joe Namath;80
 Joe;50
 Namath;60
@@ -982,8 +915,6 @@ Groban;70
 Mandy Patinkin;90
 Patinkin;70
 Jonathan Taylor Thomas;70
-Jonathan Taylor;40
-Taylor Thomas;40
 Ryan Seacrest;90
 Seacrest;70
 Michael Strahan;80
@@ -1004,9 +935,6 @@ John Oliver;90
 Kevin Smith;80
 Kathie Lee Gifford;90
 Kathie;50
-Gifford;40
-Kathie Lee;40
-Lee Gifford;40
 John Roberts;90
 Beverly D'Angelo;70
 Beverly;50
@@ -1016,7 +944,6 @@ Rickles;50
 J.K. Simmons;80
 Simmons;60
 Mr. T;90
-U2;1
 Rhea Perlman;70
 Perlman;60
 Christopher Guest;90
@@ -1040,8 +967,6 @@ Neve Campbell;70
 Kid Rock;80
 Kathleen Turner;70
 Kathleen;50
-Beanie Feldstein;80
-Feldstein;50
 James Woods;70
 Bette Midler;90
 Bette;50
@@ -1087,32 +1012,23 @@ Larry King;80
 Larry;50
 Lucy Lawless;90
 Max von Sydow;70
-von;40
-Sydow;50
-Max von;40
-von Sydow;40
 Tony Hawk;90
 Troy Aikman;80
 Aikman;70
 Eddie Izzard;90
 Eddie;50
+Suzy Eddie Izzard;90
+Suzy Izzard;80
 Ken Jennings;70
 Tom Clancy;70
 Clancy;60
 John C. Reilly;70
-Reilly;50
-John C.;40
-C. Reilly;40
 Matt Dillon;90
 The Smashing Pumpkins;90
-The Smashing;40
 Smashing Pumpkins;80
 Parker Posey;80
 Posey;50
 Carice van Houten;70
-Carice;50
-Houten;50
-Carice van;40
 van Houten;60
 Rob Riggle;70
 Riggle;50
@@ -1139,6 +1055,7 @@ Eartha;70
 Kitt;70
 Elliott Gould;70
 Elliott;50
+Glenn Gould;70
 Jennifer Tilly;70
 Tilly;50
 Ramones;80
@@ -1166,7 +1083,6 @@ Johnnie Cochran;80
 Johnnie;50
 Tony Bennett;90
 Fall Out Boy;90
-Out Boy;40
 John Madden;70
 Martin Short;70
 Ben Schwartz;70
@@ -1184,9 +1100,6 @@ James Olmos;40
 Ted Nugent;80
 Nugent;60
 Oscar De La Hoya;80
-Oscar De;40
-De La;40
-La Hoya;40
 Jane Lynch;90
 Ernest Borgnine;80
 Ernest;50
@@ -1203,6 +1116,7 @@ Pete;50
 Sampras;60
 Kristen Schaal;80
 Schaal;60
+Kristen Schaal is a horse;90
 Richard Dawkins;90
 Dawkins;80
 Jane Krakowski;70
@@ -1210,9 +1124,6 @@ Krakowski;60
 Wallace Shawn;90
 Cecily Strong;70
 Cecily;50
-Wanda Sykes;90
-Wanda;50
-Sykes;60
 Frank Welker;70
 Welker;50
 Adam West;70
@@ -1245,10 +1156,6 @@ Maron;50
 Johnny Mathis;80
 Mathis;60
 Wayne Newton;70
-David Hyde Pierce;90
-Hyde;50
-David Hyde;40
-Hyde Pierce;40
 Michael Palin;80
 Palin;60
 Hannibal Buress;80
@@ -1269,7 +1176,6 @@ Varney;60
 Matt Groening;90
 Groening;70
 The White Stripes;90
-The White;40
 White Stripes;80
 Dan Marino;70
 Joe Pantoliano;70
@@ -1343,8 +1249,6 @@ Larry Holmes;70
 Jon Lovitz;80
 Lovitz;70
 The Moody Blues;70
-The Moody;40
-Moody Blues;70
 Dick Cavett;80
 Cavett;60
 Peter Serafinowicz;70
@@ -1363,8 +1267,6 @@ Larry Hagman;80
 Hagman;70
 John Waters;80
 Jimmy O. Yang;80
-Jimmy O.;40
-O. Yang;40
 Dan Rather;80
 Martin Landau;70
 Alton Brown;90
@@ -1390,8 +1292,6 @@ Michelle Kwan;90
 Kwan;70
 Yo-Yo Ma;90
 Yo-Yo;60
-Ben Platt;80
-Platt;70
 Rob Halford;70
 Halford;60
 Mario Batali;90
@@ -1415,8 +1315,6 @@ Dick Clark;80
 Jane Kaczmarek;70
 Kaczmarek;60
 J. B. Smoove;70
-Smoove;60
-B. Smoove;40
 Janet Reno;70
 Janet;50
 Rachel Dratch;70
@@ -1432,8 +1330,6 @@ Randy Jackson;70
 Adam Savage;90
 Norman Lear;70
 Dennis Weaver;70
-Harvey Fierstein;90
-Fierstein;70
 Michael Buffer;70
 Vanessa Bayer;70
 Delroy Lindo;70
@@ -1496,8 +1392,6 @@ Darby;60
 Ben Daniels;70
 Amber Riley;70
 Kevin Michael Richardson;70
-Kevin Michael;40
-Michael Richardson;40
 Nicole Byer;70
 Nicole;50
 Byer;50
@@ -1522,8 +1416,6 @@ Blake Anderson;70
 Wolfgang Puck;90
 Wolfgang;70
 Lisa Leslie;70
-Fortune Feimster;70
-Feimster;60
 Ed McMahon;70
 McMahon;60
 Utkarsh Ambudkar;70
@@ -1560,10 +1452,6 @@ Nathan;50
 Dennis Franz;70
 Franz;60
 Marvelous Marvin Hagler;70
-Marvin;50
-Hagler;50
-Marvelous Marvin;40
-Marvin Hagler;40
 James Lipton;70
 Lipton;60
 Jeff Ross;70
@@ -1613,8 +1501,6 @@ Illeana;60
 John Kricfalusi;70
 Kricfalusi;60
 James L. Brooks;80
-James L.;40
-L. Brooks;40
 Brian Grazer;70
 Brian;50
 Grazer;50
@@ -1624,24 +1510,14 @@ David Herman;70
 Paul Winfield;70
 Winfield;60
 Doris Kearns Goodwin;70
-Kearns;50
-Goodwin;50
-Doris Kearns;50
-Kearns Goodwin;50
 Isabel Sanford;70
 Isabel;50
 Sanford;60
 Muhammad Yunus;70
 Yunus;60
-Joyce Carol;40
-Carol Oates;40
+Joyce Carol Oates;80
 Jay North;70
 Sidse Babett Knudsen;70
-Sidse;50
-Babett;50
-Knudsen;50
-Sidse Babett;40
-Babett Knudsen;40
 Alex Rocco;70
 Rocco;50
 Ksenia Solo;80
@@ -1681,8 +1557,6 @@ Stephen Jay;70
 Lawrence Tierney;70
 Tierney;60
 Los Lobos;90
-Los;50
-Lobos;60
 Randy Bachman;70
 Bachman;60
 Pamela Reed;70
@@ -1715,9 +1589,6 @@ Kurt Loder;70
 Kurt;50
 Loder;60
 Yo La Tengo;70
-Tengo;60
-Yo La;40
-La Tengo;60
 Nancy O'Dell;70
 O'Dell;60
 Sir Mix-a-Lot;90
@@ -1764,9 +1635,6 @@ Howser;60
 Joe C.;40
 Dawnn Lewis;70
 Dawnn;40
-Ryne Sandberg;70
-Ryne;1
-Sandberg;70
 Gedde Watanabe;70
 Gedde;60
 Watanabe;60
@@ -1804,14 +1672,10 @@ Sting;60
 Will Shortz;90
 Shortz;80
 Hank Williams, Jr.;70
-Williams, Jr.;40
 Okilly Dokilly;80
 Okilly;60
 Dokilly;60
 Ken Griffey, Jr.;80
-Griffey,;40
-Ken Griffey,;40
-Griffey, Jr.;40
 Pamela Hayden;80
 Hayden;60
 Jill Sobule;80
@@ -1832,21 +1696,20 @@ Ashlee Simpson;90
 Ashlee;60
 Ann Coulter;90
 Ann;50
-Ajit Pai;80
-Ajit;60
-Pai;60
+Ajit Pai;40
+Ajit;40
+Pai;40
 Billie Joe Armstrong;90
-Billie Joe;70
-Joe Armstrong;40
 Beyoncé;90
 Brendon Urie;80
 Brendon;50
-Urie;60
+Urie;50
 Bill O'Reilly;80
 O'Reilly;70
 Dick Cheney;90
 Cheney;80
 Dr. Phil;90
+Phil McGraw;70
 Gwen Stefani;90
 Gwen;50
 Stefani;70
@@ -1879,15 +1742,13 @@ Justin Timberlake;90
 Timberlake;70
 Kurt Cobain;80
 Cobain;60
-Kim Jong Un;90
-Kim Jong;50
-Jong Un;40
+Kim Jong Un;70
+Kim Jong-il;70
 Brett Kavanaugh;90
 Brett;50
 Kavanaugh;70
 Nas X;80
 L'il Nas X;80
-L'il Nas;40
 Lindsay Lohan;90
 Marilyn Manson;90
 Marty McFly;90
@@ -1895,17 +1756,15 @@ Marty;50
 McFly;60
 Martin McFly;70
 Olsen Twins;80
+The Olsen Twins;80
 Ozzy Osbourne;90
 Ozzy;60
 Osbourne;70
 Paris Hilton;90
 Hilton;70
-Ellen Paige;90
 Sarah Palin;90
 P Diddy;80
-Diddy;70
 Pee Wee Herman;90
-Wee Herman;40
 Quentin;60
 Alan Rickman;90
 Rickman;70
@@ -1920,13 +1779,13 @@ Rick Astley;90
 Astley;70
 Robert Pattinson;90
 Pattinson;70
+RPatz;70
 Mitt Romney;90
 Romney;70
 Ron Paul;80
 Soulja Boy;90
-Soulja;60
 Usain Bolt;90
-Usain;70
+Usain;40
 Whitney Houston;90
 Zac Efron;90
 Zac;50
@@ -1941,18 +1800,16 @@ Evanescence;90
 Enya;80
 Good Charlotte;90
 Insane Clown Posse;90
-Insane Clown;40
-Clown Posse;40
+Juggalo;60
+Juggalos;60
 My Chemical Romance;90
-My Chemical;40
-Chemical Romance;40
+MCR;60
 Nickelback;90
 Rammstein;80
 The Ramones;90
 Radiohead;90
 Simple Plan;90
 Van Halen;90
-Halen;40
 ZZ Top;70
 They Might Be Giants;90
 TMBG;60
@@ -1979,31 +1836,24 @@ Ariela Barer;90
 Ariela;60
 Barer;60
 Asia Kate Dillon;90
-Kate;60
-Dillon;60
-Asia Kate;40
-Kate Dillon;40
 Aubrey Plaza;90
 Aubrey;60
-Bd Wong;80
-Wong;60
+BD Wong;80
+Wong;50
 Beanie Feldstein;90
 Feldstein;60
 Ben Platt;90
 Platt;60
 Ben Whishaw;80
 Whishaw;60
-Bex Taylor-klaus;90
+Bex Taylor-Klaus;90
 Bex;60
-Taylor-klaus;60
+Taylor-Klaus;60
 Billy Porter;90
 Bobbi Menuez;70
 Bobbi;60
 Menuez;50
 Bobbi Salvör Menuez;80
-Salvör;50
-Bobbi Salvör;40
-Salvör Menuez;40
 Cara Delevingne;90
 Cara;60
 Delevingne;70
@@ -2019,36 +1869,25 @@ Dan;60
 Daniela Sea;80
 Daniela;60
 David Hyde Pierce;90
-Hyde;70
-David Hyde;40
-Hyde Pierce;40
 Denis O'hare;90
 Denis;60
 O'hare;60
-Eddie Izzard;90
-Eddie;60
 Elise Bauman;90
 Elise;60
 Bauman;60
-Ellen Degeneres;90
-Ellen;60
-Degeneres;60
 Elliot Page;90
 Elliot;60
 Evan Rachel Wood;90
-Evan;60
-Evan Rachel;40
-Rachel Wood;40
 Ezra Miller;90
 Fortune Feimster;90
 Feimster;60
 Guillermo Díaz;90
-Guillermo;60
 Díaz;60
 Harvey Fierstein;90
 Fierstein;60
 Holland Taylor;90
 Ian Mckellen;90
+Sir Ian Mckellen;90
 Ian;60
 Mckellen;70
 Indya Moore;80
@@ -2079,8 +1918,6 @@ Mantello;70
 Joel Grey;90
 John Early;90
 Jonathan Van Ness;90
-Jonathan Van;40
-Van Ness;40
 Kaitlyn Alexander;80
 Kaitlyn;70
 Kate Mckinnon;90
@@ -2093,12 +1930,14 @@ Kiersey;60
 Clemons;60
 Kristen Stewart;90
 Kristen;60
+KStew; 70
 Lachlan Watson;80
 Lachlan;60
 Laurel Holloman;90
 Holloman;60
 Laverne Cox;90
 Laverne;70
+Cox;60
 Lea Delaria;80
 Delaria;60
 Lee Pace;80
@@ -2120,10 +1959,6 @@ Miley Cyrus;90
 Miley;70
 Nathan Lane;90
 Nathan;60
-Neil Patrick Harris;90
-Neil;60
-Neil Patrick;40
-Patrick Harris;40
 Nico Tortorella;90
 Nico;60
 Tortorella;60
@@ -2136,11 +1971,7 @@ Rhea Butcher;90
 Richard Chamberlain;80
 Richard;60
 Robin de Jesus;90
-Robin de;40
-de Jesus;40
 Robin Lord Taylor;90
-Robin Lord;40
-Lord Taylor;40
 Rock Hudson;90
 Rose Mcgowan;80
 Mcgowan;60
